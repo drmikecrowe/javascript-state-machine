@@ -33,6 +33,7 @@ declare namespace StateMachine {
 	type StateMachineTransitions = () => string[];
 	type StateMachineStates = () => string[];
 	type Callback = (...args: any[]) => any;
+	type state = string;
 	interface Observe {
 		(event: string, callback: Callback): void;
 		[name: string]: Callback;
